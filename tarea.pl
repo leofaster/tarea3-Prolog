@@ -65,6 +65,11 @@ Pregunta 4
 Dado un conjunto, la funcion devuelve true si cualquiera de sus 
 subconjutos suma el resultado
 */
+
+subset_sum([],0).
+subset_sum([H|T],Resultado):-
+  subconjunto([H|T],X),
+  suma(X,Resultado).
   
-subset_sum
+
   
